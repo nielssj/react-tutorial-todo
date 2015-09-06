@@ -106,9 +106,7 @@ var TodoStore = assign({}, EventEmitter.prototype, {
 });
 
 // Register callback to handle all updates
-AppDispatcher.register(function(payload) {
-    //var action = payload.action;       // <- Used this with the home-made dispatcher
-    var action = payload;
+AppDispatcher.register(function(action) {
     var text;
 
     switch(action.actionType) {

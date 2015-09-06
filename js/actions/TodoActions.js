@@ -8,7 +8,6 @@ var TodoConstants = require('../constants/TodoConstants');
 var TodoActions = {
 
     create: function(text) {
-        //AppDispatcher.handleViewAction({      // <- Used this with the home-made dispatcher
         AppDispatcher.dispatch({
             actionType: TodoConstants.TODO_CREATE,
             text: text
@@ -16,7 +15,6 @@ var TodoActions = {
     },
 
     destroy: function(id) {
-        //AppDispatcher.handleViewAction({      // <- Used this with the home-made dispatcher
         AppDispatcher.dispatch({
             actionType: TodoConstants.TODO_DESTROY,
             id: id
